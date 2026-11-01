@@ -1,0 +1,15 @@
+Literature Review and Project Evaluation
+
+Feedback and Evaluation
+Lecturer Assessment: The supervisor reviewed the initial 13 micro fact table design, noting excessive table fragmentation, redundant joins, and DAX filter context issues due to the lack of a unified year dimension.
+
+Suggested Improvements
+Galaxy Schema: Group micro tables into subject fact tables such as FactMacro, FactElectricity, FactGenerationMix, and FactEmissionsAndTrade.
+Conformed Dimensions: Extract year into a standalone DimYear table alongside DimRegion to enable global slicing across all facts.
+Measure Management: Consolidate DAX formulas into a central measure table for clean field pane organization.
+
+Final Grading Criteria
+Documentation 25 percent: Requirements gathering, data dictionary, ETL log, schema design, and user guide.
+Implementation 40 percent: Power Query ETL quality, Galaxy Schema design, dimension joins, and DAX measure complexity.
+Testing and Quality 15 percent: Data reconciliation, user acceptance testing feedback, performance tuning, and missing data handling.
+Presentation and UI 20 percent: Dashboard hierarchy, visual layout, color contrast, and presentation defense.
