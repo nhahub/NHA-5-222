@@ -1,0 +1,23 @@
+Requirements Gathering
+
+Stakeholder Analysis
+Energy Policy Analysts: Require high level regional transition summaries, low carbon shares, and emission trends.
+Economic Researchers: Require per capita generation metrics, GDP correlations, and cross technology comparisons.
+Power BI System Admins: Demand optimized query speed, clean schema design, and easy model maintenance.
+
+User Stories and Use Cases
+User Story 1: As an Analyst, I want to filter by region and year to track renewable versus fossil growth from 2000 to 2025.
+User Story 2: As a Researcher, I want to select a country to compare GDP against carbon intensity.
+Use Case Scenario: User selects Europe and 2010 to 2025 to instantly view low carbon share growth and carbon intensity reductions across all charts.
+
+Functional Requirements
+FR 1 ETL Processing: Clean 1,391 rows, set missing hydro or nuclear values to 0.0, and impute missing GDP figures.
+FR 2 Conformed Dimensions: Establish one to many single direction relationships from DimRegion and DimYear to all fact tables.
+FR 3 DAX Analytics: Calculate generation totals, per capita metrics, technology shares in percentages, and carbon intensity indices.
+FR 4 User Interface: Implement country drill throughs, regional bookmarking, and dynamic tooltips.
+
+Non-Functional Requirements
+Performance: Visual render time under 1.5 seconds.
+Usability: Intuitive visual color palettes distinguishing renewable versus fossil sources.
+Reliability: 100 percent numerical accuracy against source dataset calculations.
+Maintainability: Schema accepts future yearly dataset extensions without breaking DAX logic.
