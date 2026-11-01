@@ -1,0 +1,30 @@
+Section 1 Project Planning and Management
+
+Project Proposal
+Overview: A Power BI Business Intelligence solution analyzing a 54 country global energy and macroeconomic dataset from 2000 to 2025.
+Objectives: Build a Galaxy Schema data model, engineer DAX measures for energy transition tracking, and deploy executive dashboards.
+Scope: Covers ETL data cleaning, missing value imputation, Galaxy Schema modeling, DAX analytics, and visual reports, excluding real time grid controls.
+
+Project Plan and Deliverables
+Phase 1 Weeks 1 to 2: Data audit, null value handling strategy, and project charter.
+Phase 2 Weeks 3 to 4: Power Query ETL and Galaxy Schema architecture for DimRegion and DimYear.
+Phase 3 Weeks 5 to 6: DAX measure development for generation mix shares and emissions.
+Phase 4 Weeks 7 to 9: Dashboard layout, user acceptance testing, and DAX optimization.
+Phase 5 Weeks 10 to 12: Technical documentation, user manual, and presentation defense.
+
+Task Assignment and Roles
+Project Lead / Architect: Defines scope, Galaxy Schema architecture, and project governance.
+Data Engineer: Manages Power Query transformations, null handling, and dimension extraction.
+BI and DAX Developer: Writes DAX measures, time intelligence formulas, and builds report pages.
+QA and Analyst: Validates data against raw sources, tests visual interactions, and checks rendering speed.
+
+Risk Assessment and Mitigation Plan
+Missing Macro Data: Impute via trend extrapolation or World Bank data, logging methods in the ETL documentation.
+Model Fragmentation: Consolidate 13 micro fact tables into a Galaxy Schema with conformed dimensions to prevent complex DAX overhead.
+Asymmetric Time Ranges: Implement DAX measures with explicit max year logic to handle partial country data gracefully.
+
+Key Performance Indicators
+Response Time: Visual rendering under 1.5 seconds per slicer interaction.
+Data Accuracy: 100 percent reconciliation with raw source aggregates.
+Model Efficiency: VertiPaq memory footprint optimized under 50 MB.
+User Adoption: User acceptance testing satisfaction score equal to or greater than 90 percent.
